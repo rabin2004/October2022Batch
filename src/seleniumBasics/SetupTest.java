@@ -14,6 +14,9 @@ public class SetupTest {
 		// 2. Create instance of ChromeDriver class, referring to WebDriver
 		WebDriver driver = new ChromeDriver();
 		
+		Thread.sleep(5000);
+		driver.manage().window().maximize();
+		
 		// 3. to load web application
 		driver.get("https://www.amazon.com");
 		
